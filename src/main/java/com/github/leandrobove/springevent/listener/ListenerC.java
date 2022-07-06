@@ -9,10 +9,10 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Component
-public class ListenerA {
+public class ListenerC {
 
 	public void watchMessage(String message) {
-		log.info("ListenerA : watching message: {}", message);
+		log.info("ListenerC : watching message: {}", message);
 	}
 
 	@EventListener

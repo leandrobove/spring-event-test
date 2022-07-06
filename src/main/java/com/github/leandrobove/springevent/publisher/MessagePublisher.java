@@ -18,7 +18,7 @@ public class MessagePublisher {
 	public void sendMessage(String message) {
 		log.info("Publishing an event, listeners should be executed now..");
 
-		applicationEventPublisher.publishEvent(new MessageEvent(this, message));
+		applicationEventPublisher.publishEvent(new MessageEvent(message));
 	}
 
 }
